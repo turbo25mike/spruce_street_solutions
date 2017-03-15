@@ -8,4 +8,4 @@ RUN ["dotnet", "publish", "-o", "/bin/dist", "-c", "release"]
 
 EXPOSE 80/tcp
 
-ENTRYPOINT ["dotnet", "/bin/dist/spd_cli.dll"]
+ENTRYPOINT ["dotnet", "/bin/dist/client.dll"]

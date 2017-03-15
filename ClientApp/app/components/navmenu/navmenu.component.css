@@ -2,6 +2,16 @@ li .glyphicon {
     margin-right: 10px;
 }
 
+@font-face {
+    font-family: "typewriter";
+    src: url(../../content/fonts/typewriter.ttf) format("truetype");
+}
+
+.company-font {
+    font-family: "typewriter", Verdana, Tahoma;
+    font-size: 1em;
+}
+
 /* Highlighting rules for nav menu items */
 li.link-active a,
 li.link-active a:hover,
@@ -24,6 +34,11 @@ li.link-active a:focus {
     .main-nav {
         height: 100%;
         width: calc(25% - 20px);
+    }
+
+    .company-font {
+        font-family: "typewriter", Verdana, Tahoma;
+        font-size: 1.5em;
     }
     .navbar {
         border-radius: 0px;

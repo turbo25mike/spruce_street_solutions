@@ -12,16 +12,15 @@ export class FetchDataComponent {
     public apiStatus: string;
     public apiEnvironment: string;
     public apiLoggedIn: string;
-    public apiUrl: string = window.location.protocol + '//' + window.location.hostname + ':5000';
 
     constructor(private http: Http, private service: StatusService) {
         http.get('/api/SampleData/WeatherForecasts').subscribe(result => {
             this.forecasts = result.json();
         });
 
-        service.getStatus().subscribe(res => this.apiStatus = res);
-        service.getEnvironment().subscribe(res => this.apiEnvironment = res);
-        service.getLoggedIn().subscribe(res => this.apiLoggedIn = res);
+        //service.getStatus().subscribe(res => this.apiStatus = res);
+        //service.getEnvironment().subscribe(res => this.apiEnvironment = res);
+        //service.getLoggedIn().subscribe(res => this.apiLoggedIn = res);
     }
 }
 

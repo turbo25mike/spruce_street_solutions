@@ -7,9 +7,12 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
             </button>
-            <a class='navbar-brand' [routerLink]="['/home']">Web</a>
-            <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
-            <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
+            <a class='navbar-brand company-font' [routerLink]="['/home']">
+                <span style="font-size:2em; float:left;">[</span>
+                <span style="text-align:center;float:left;">Spruce Street<br />Solutions</span>
+                <span style="font-size:2em;float:left;">]</span>
+            </a>
+
         </div>
         <div class='clearfix'></div>
         <div class='navbar-collapse collapse'>
@@ -28,6 +31,10 @@
                     <a [routerLink]="['/fetch-data']">
                         <span class='glyphicon glyphicon-th-list'></span> Fetch data
                     </a>
+                </li>
+                <li>
+                    <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
+                    <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
                 </li>
             </ul>
         </div>

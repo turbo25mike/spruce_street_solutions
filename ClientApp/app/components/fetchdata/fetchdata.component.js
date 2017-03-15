@@ -16,13 +16,12 @@ var FetchDataComponent = (function () {
         var _this = this;
         this.http = http;
         this.service = service;
-        this.apiUrl = window.location.protocol + '//' + window.location.hostname + ':5000';
         http.get('/api/SampleData/WeatherForecasts').subscribe(function (result) {
             _this.forecasts = result.json();
         });
-        service.getStatus().subscribe(function (res) { return _this.apiStatus = res; });
-        service.getEnvironment().subscribe(function (res) { return _this.apiEnvironment = res; });
-        service.getLoggedIn().subscribe(function (res) { return _this.apiLoggedIn = res; });
+        //service.getStatus().subscribe(res => this.apiStatus = res);
+        //service.getEnvironment().subscribe(res => this.apiEnvironment = res);
+        //service.getLoggedIn().subscribe(res => this.apiLoggedIn = res);
     }
     return FetchDataComponent;
 }());
