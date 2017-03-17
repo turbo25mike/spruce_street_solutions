@@ -21,6 +21,7 @@ var sharedConfig = {
             { test: /\.woff$/, loader: 'url?limit=65000&mimetype=application/font-woff&name=content/fonts/[name].[ext]' },
             { test: /\.woff2$/, loader: 'url?limit=65000&mimetype=application/font-woff2&name=content/fonts/[name].[ext]' },
             { test: /\.[ot]tf$/, loader: 'url?limit=65000&mimetype=application/octet-stream&name=content/fonts/[name].[ext]' },
+            { test: /\.mp4$/, loader: 'file'}
         ]
     }
 };

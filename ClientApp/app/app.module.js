@@ -11,8 +11,10 @@ var angular2_universal_1 = require("angular2-universal");
 var app_component_1 = require("./components/app/app.component");
 var navmenu_component_1 = require("./components/navmenu/navmenu.component");
 var home_component_1 = require("./components/home/home.component");
-var fetchdata_component_1 = require("./components/fetchdata/fetchdata.component");
-var counter_component_1 = require("./components/counter/counter.component");
+var approach_component_1 = require("./components/approach/approach.component");
+var services_component_1 = require("./components/services/services.component");
+var careers_component_1 = require("./components/careers/careers.component");
+var contact_component_1 = require("./components/contact/contact.component");
 var angular2_jwt_1 = require("angular2-jwt");
 var AppModule = (function () {
     function AppModule() {
@@ -25,8 +27,10 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             navmenu_component_1.NavMenuComponent,
-            counter_component_1.CounterComponent,
-            fetchdata_component_1.FetchDataComponent,
+            approach_component_1.ApproachComponent,
+            careers_component_1.CareersComponent,
+            contact_component_1.ContactComponent,
+            services_component_1.ServicesComponent,
             home_component_1.HomeComponent
         ],
         providers: [
@@ -37,8 +41,10 @@ AppModule = __decorate([
             router_1.RouterModule.forRoot([
                 { path: '', redirectTo: 'home', pathMatch: 'full' },
                 { path: 'home', component: home_component_1.HomeComponent },
-                { path: 'counter', component: counter_component_1.CounterComponent },
-                { path: 'fetch-data', component: fetchdata_component_1.FetchDataComponent },
+                { path: 'services', component: services_component_1.ServicesComponent },
+                { path: 'approach', component: approach_component_1.ApproachComponent },
+                { path: 'careers', component: approach_component_1.ApproachComponent },
+                { path: 'contact', component: approach_component_1.ApproachComponent },
                 { path: '**', redirectTo: 'home' }
             ])
         ]

@@ -1,25 +1,4 @@
-﻿h1,h2,h3,h4,h5,h6 {
-    font-family: Dosis, Arial, sans-serif;
-}
-
-section {
-    float:left;
-}
-
-section.white {
-    background-color: white;
-}
-
-section.gray {
-    background-color: slategray;
-    color: white;
-}
-
-section.text {
-    padding: 20px;
-    text-align: center;
-}
-
+﻿
 .banner-wrapper {
     position: relative;
     overflow: hidden;

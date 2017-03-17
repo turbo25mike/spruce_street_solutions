@@ -13,14 +13,20 @@
         <div class='navbar-collapse collapse'>
             <ul class="nav navbar-nav">
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/counter']">Approach</a>
+                    <a [routerLink]="['/approach']">Approach</a>
                 </li>
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-data']">Services</a>
+                    <a [routerLink]="['/services']">Services</a>
                 </li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/work']">Work</a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/careers']">Careers</a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/contact']">Contact</a>
+                </li>
             </ul>
 
             <ul class='nav navbar-nav  navbar-right'>

@@ -4,8 +4,10 @@ import { UniversalModule } from 'angular2-universal';
 import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
+import { ApproachComponent } from './components/approach/approach.component';
+import { ServicesComponent } from './components/services/services.component';
+import { CareersComponent } from './components/careers/careers.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { AUTH_PROVIDERS } from 'angular2-jwt';
 
 @NgModule({
@@ -13,8 +15,10 @@ import { AUTH_PROVIDERS } from 'angular2-jwt';
     declarations: [
         AppComponent,
         NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
+        ApproachComponent,
+        CareersComponent,
+        ContactComponent,
+        ServicesComponent,
         HomeComponent
     ],
     providers: [
@@ -25,8 +29,10 @@ import { AUTH_PROVIDERS } from 'angular2-jwt';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'services', component: ServicesComponent },
+            { path: 'approach', component: ApproachComponent },
+            { path: 'careers', component: ApproachComponent },
+            { path: 'contact', component: ApproachComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
