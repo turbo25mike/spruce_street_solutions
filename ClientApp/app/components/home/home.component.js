@@ -14,7 +14,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home',
-        template: require('./home.component.html')
+        template: require('./home.component.html'),
+        styles: [require('./home.component.css')]
     })
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;

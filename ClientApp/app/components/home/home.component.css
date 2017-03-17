@@ -1,0 +1,75 @@
+﻿h1,h2,h3,h4,h5,h6 {
+    font-family: Dosis, Arial, sans-serif;
+}
+
+section {
+    float:left;
+}
+
+section.white {
+    background-color: white;
+}
+
+section.gray {
+    background-color: slategray;
+    color: white;
+}
+
+section.text {
+    padding: 20px;
+    text-align: center;
+}
+
+.banner-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 115%;
+    margin-top: -50px;
+    margin-left: -20px;
+}
+
+    .banner-wrapper .banner {
+        background: url(../../content/images/produce.jpg) no-repeat;
+        background-position: center top;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+        .banner-wrapper .banner::after {
+            background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: '';
+            z-index: 1;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .banner-wrapper .banner .text {
+            color: ghostwhite;
+            font-family: Dosis, Arial, sans-serif;
+            font-size: 2em;
+            width: 100%;
+            max-width: 750px;
+            text-align: center;
+            padding-bottom: 50px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: 2;
+        }

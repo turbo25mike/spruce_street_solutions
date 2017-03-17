@@ -11,24 +11,30 @@
             </a>
         </div>
         <div class='navbar-collapse collapse'>
+            <ul class="nav navbar-nav">
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/counter']">Approach</a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/fetch-data']">Services</a>
+                </li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
             <ul class='nav navbar-nav  navbar-right'>
                 <li>
                     <a class="linkedin" href="https://www.linkedin.com/company/sprucest" target="_blank">Linkedin</a>
                 </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/counter']">
-                        <span class='glyphicon glyphicon-education'></span> Counter
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-data']">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
-                    </a>
-                </li>
                 <li>
+                    <a class="facebook" href="https://www.linkedin.com/company/sprucest" target="_blank">Linkedin</a>
+                </li>
+                
+                <!--<li>
                     <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
                     <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
-                </li>
+                </li>-->
             </ul>
         </div>
     </div>

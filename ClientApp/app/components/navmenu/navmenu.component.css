@@ -11,6 +11,7 @@ li .glyphicon {
 .logo {
     background: url(../../content/images/logo.png) no-repeat;
     width: 150px;
+    margin-top: 7px;
 }
 
 .linkedin {
@@ -44,7 +45,35 @@ li .glyphicon {
     }
 }
 
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    position: fixed;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
 
+    .navbar li a {
+        color: white;
+        font-family:Dosis Bold, Arial, sans-serif;
+        font-weight:bolder;
+    }
+
+.navbar-toggle {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-width: 3px;
+    border-color: slategray;
+    padding: 6px;
+    background-color: ghostwhite;
+}
+
+    .navbar-toggle .icon-bar {
+        height: 1px;
+    }
 
 /* Highlighting rules for nav menu items */
 li.link-active a,
