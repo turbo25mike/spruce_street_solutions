@@ -56,8 +56,14 @@ li .glyphicon {
 
     .navbar li a {
         color: white;
-        font-family:Dosis Bold, Arial, sans-serif;
-        font-weight:bolder;
+        font-family: Dosis, Arial, sans-serif;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -khtml-font-smoothing: antialiased;
+        -apple-font-smoothing: antialiased;
+        font-smooth: always;
+        text-rendering: optimizelegibility;
+        text-rendering: geometricPrecision;
     }
 
 .navbar-toggle {

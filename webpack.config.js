@@ -15,13 +15,13 @@ var sharedConfig = {
     module: {
         loaders: [
             { test: /\.ts$/, include: /ClientApp/, loader: 'ts', query: { silent: true } },
-            { test: /\.html$/, loader: 'raw' },
+            { test: /\.html$/, loader: 'html?attrs[]=video:src&attrs[]=img:src' },
             { test: /\.css$/, loader: 'to-string!css' },
             { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: 'url', query: { limit: 25000 } },
             { test: /\.woff$/, loader: 'url?limit=65000&mimetype=application/font-woff&name=content/fonts/[name].[ext]' },
             { test: /\.woff2$/, loader: 'url?limit=65000&mimetype=application/font-woff2&name=content/fonts/[name].[ext]' },
             { test: /\.[ot]tf$/, loader: 'url?limit=65000&mimetype=application/octet-stream&name=content/fonts/[name].[ext]' },
-            { test: /\.mp4$/, loader: 'file'}
+            { test: /\.mp4$/, loader: 'file?name=content/images/[name].[ext]'}
         ]
     }
 };
