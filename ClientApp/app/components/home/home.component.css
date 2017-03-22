@@ -1,4 +1,9 @@
 ﻿
+h1, h2, h3, h4, h5, h6 {
+    font-family: Dosis, Arial, sans-serif;
+}
+
+
 .banner-wrapper {
     position: relative;
     overflow: hidden;
@@ -66,7 +71,7 @@
 
 
 .cross-platform {
-    margin-top:10px;
+    margin-top: 10px;
     background: #161c25 url(../../content/images/background-crossplatform.png) no-repeat right top;
     position: relative;
     width: 100%;
@@ -142,6 +147,40 @@
     height: 3px;
     border-width: 0;
     box-sizing: content-box;
+}
+
+.hr-black {
+    background-color: #222;
+}
+
+.case-study {
+    background: url(../../content/images/automap.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+    .case-study case-study-inner::after {
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+    }
+
+.case-study-col {
+    color: #fdfdf9;
+    
+}
+
+.black {
+    color: #222;
+}
+
+.left-bar {
+    border-left: 1px solid #fdfdf9;
+}
+
+.right-bar {
+    border-left: 1px solid #fdfdf9;
 }
 
 .section-text {
