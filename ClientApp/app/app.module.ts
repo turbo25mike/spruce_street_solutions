@@ -11,7 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AUTH_PROVIDERS } from 'angular2-jwt';
 
 @NgModule({
-    bootstrap: [ AppComponent ],
+    bootstrap: [AppComponent],
     declarations: [
         AppComponent,
         NavMenuComponent,
