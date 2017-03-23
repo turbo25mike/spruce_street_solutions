@@ -15,7 +15,7 @@ var sharedConfig = {
     module: {
         loaders: [
             { test: /\.ts$/, include: /ClientApp/, loader: 'ts', query: { silent: true } },
-            { test: /\.html$/, loader: 'html?attrs[]=video:src&attrs[]=img:src&minimize=false' },
+            { test: /\.html$/, loader: 'html?attrs[]=source:src&attrs[]=img:src&minimize=false' },
             { test: /\.css$/, loader: 'to-string!css' },
             { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: 'url', query: { limit: 25000 } },
             { test: /\.woff$/, loader: 'url?limit=65000&mimetype=application/font-woff&name=content/fonts/[name].[ext]' },
