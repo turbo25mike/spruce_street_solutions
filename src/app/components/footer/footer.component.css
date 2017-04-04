@@ -45,6 +45,40 @@ li .glyphicon {
     }
 }
 
+.navbar {
+    background-color: transparent;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+    border-color: transparent;
+    position: fixed;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
+
+@media (max-width: 767px) {
+    
+  .navbar-collapse {
+     background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 2%, rgba(0,0,0,0.5) 3%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(0,0,0,0.5) 3%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(0,0,0,0.5) 3%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+    }
+}
+
+    .navbar li a {
+        color: white;
+        font-family: Dosis, Arial, sans-serif;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -khtml-font-smoothing: antialiased;
+        -apple-font-smoothing: antialiased;
+        font-smooth: always;
+        text-rendering: optimizelegibility;
+        text-rendering: geometricPrecision;
+    }
 
 .navbar-toggle {
     float: left;
@@ -60,35 +94,18 @@ li .glyphicon {
         height: 1px;
     }
 
-
-.navbar {
-    background-color: transparent;
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
-    border-color: transparent;
-    
+/* Highlighting rules for nav menu items */
+li.link-active a,
+li.link-active a:hover,
+li.link-active a:focus {
+    color: slategray;
 }
 
-@media (max-width: 767px) {
-    
-  .navbar-collapse {
-     background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 2%, rgba(0,0,0,0.5) 3%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(255,255,255,0.5) 3%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(255,255,255,0.5) 3%,rgba(255,255,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
-    }
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
-
-    .navbar li a {
-        color: darkslategray;
-        font-family: Dosis, Arial, sans-serif;
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        -khtml-font-smoothing: antialiased;
-        -apple-font-smoothing: antialiased;
-        font-smooth: always;
-        text-rendering: optimizelegibility;
-        text-rendering: geometricPrecision;
-    }

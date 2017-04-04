@@ -11,6 +11,7 @@ import { ApproachComponent } from './components/approach/approach.component';
 import { ServicesComponent } from './components/services/services.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { BsDropdownModule } from 'ng2-bootstrap/dropdown';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { BsDropdownModule } from 'ng2-bootstrap/dropdown';
     declarations: [
         AppComponent,
         NavMenuComponent,
+        FooterComponent,
         ApproachComponent,
         CareersComponent,
         ContactComponent,
@@ -34,6 +36,7 @@ import { BsDropdownModule } from 'ng2-bootstrap/dropdown';
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
             { path: 'services', component: ServicesComponent },
+            { path: 'work', component: WorkComponent },
             { path: 'approach', component: ApproachComponent },
             { path: 'careers', component: CareersComponent },
             { path: 'contact', component: ContactComponent },
