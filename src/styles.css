@@ -7,10 +7,6 @@
     }*/
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Dosis, Arial, sans-serif;
-}
-
 section {
     float: left;
 }
@@ -31,7 +27,7 @@ section {
 
 
 
-.section-header {
+.header  {
     font-family: Dosis, Arial, sans-serif;
     font-size: 3.5rem;
     letter-spacing: 1.9px;
@@ -41,7 +37,7 @@ section {
     margin: 0;
     padding: 0;
     font-weight: 400;
-    color: #fdfdf9;
+    color: #222;
     -webkit-font-smoothing: antialiased;
     -khtml-font-smoothing: antialiased;
     -apple-font-smoothing: antialiased;
@@ -51,6 +47,10 @@ section {
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
+}
+
+.white-text{
+    color:#fdfdf9;
 }
 
 .section-hr {
