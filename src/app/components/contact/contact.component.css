@@ -1,54 +1,44 @@
-.portland{
+.portland {
     background: url(../../../assets/images/portland.jpg) bottom center no-repeat;
     background-size: 110%;
     transition: all .5s ease-in-out;
 }
 
-.portland:hover{
+.portland:hover {
     background-size: 100%;
 }
 
-.shadow {
-            background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
-            
-        }
-
-
-.clock{
+.clock {
     height: 350px;
     margin: 50px;
     width: 350px;
     position: relative;
-    
 }
 
-.clock-content{
+.clock-content {
     position: relative;
-    top:30%;
+    top: 30%;
     text-align: center;
 }
 
-.clock .clock-content h1{
+.clock .clock-content h1 {
     font-size: 8em;
 }
 
-.clock-hand{
+.clock-hand {
     left: 0;
     position: absolute;
     top: 0;
-    right:0;
-    bottom:0;
+    right: 0;
+    bottom: 0;
 }
 
-.circle{
+.circle {
     border: 7px solid #fff;
     border-radius: 50%;
 }
 
-.seconds{
+.seconds {
     -moz-transform: translateZ(1px);
     -ms-transform: translateZ(1px);
     -webkit-transform: translateZ(1px);
@@ -67,46 +57,60 @@
     animation-timing-function: cubic-bezier(0.17, 0.67, 0.17, 0.98);
     background-image: url(../../../assets/images/clock-hand-seconds.png);
     display: block;
-    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.minutes{
+.minutes {
     background-image: url(../../../assets/images/clock-hand-minute.png);
 }
 
-.hours{
+.hours {
     background-image: url(../../../assets/images/clock-hand-hour.png);
 }
 
 @-webkit-keyframes animateRain {
-    0% { background-position:0 124% }
-    100% { background-position:0 0}
+    0% {
+        background-position: 0 124%
+    }
+    100% {
+        background-position: 0 0
+    }
 }
 
 @-moz-keyframes animateRain {
-    0% { background-position:0 124% }
-    100% { background-position:0 0 }
-} 
-
-@-o-keyframes animateRain{
-    0% { background-position:0 124% }
-    100% { background-position:0 0 }
-} 
-
-@keyframes animateRain{
-    0% { background-position:0 124% } 
-    100% { background-position:0 0 } 
+    0% {
+        background-position: 0 124%
+    }
+    100% {
+        background-position: 0 0
+    }
 }
 
-.temp{
+@-o-keyframes animateRain {
+    0% {
+        background-position: 0 124%
+    }
+    100% {
+        background-position: 0 0
+    }
+}
+
+@keyframes animateRain {
+    0% {
+        background-position: 0 124%
+    }
+    100% {
+        background-position: 0 0
+    }
+}
+
+.temp {
     font-size: 6em;
 }
 
-
-.rain{
+.rain {
     background-image: url(../../../assets/images/rain.svg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -117,12 +121,12 @@
     position: absolute;
     height: 90px;
     left: auto;
-    right: -3%;
+    right: 10%;
     top: -20px;
     width: 90px;
 }
 
-.rain::after{
+.rain::after {
     -moz-animation-name: animateRain;
     -webkit-animation-name: animateRain;
     animation-name: animateRain;
@@ -148,3 +152,17 @@
     width: 100%;
 }
 
+@media (max-width: 767px) {
+    .portland {
+        background-size: cover;
+    }
+    .portland:hover {
+        background-size: cover;
+    }
+    .temp {
+        font-size: 3em;
+    }
+    .clock {
+        margin: 50px 0;
+    }
+}
