@@ -15,11 +15,11 @@ li .glyphicon {
 
 
 .linkedin {
-    background: url(../../../assets/images/social-icons.png) no-repeat;
+    background: url(../../../assets/images/linkedin_icons.png) no-repeat;
     width: 34px;
     height: 34px;
     font-size: 0px;
-    background-position: 0px -36px;
+    background-position: 0px 0px;
 }
 
     .linkedin:hover {
@@ -28,7 +28,7 @@ li .glyphicon {
 
 
 .facebook {
-    background: url(../../../assets/images/social-icons.png) no-repeat;
+    background: url(../../../assets/images/facebook_icons.png) no-repeat;
     width: 34px;
     height: 34px;
     font-size: 0px;
