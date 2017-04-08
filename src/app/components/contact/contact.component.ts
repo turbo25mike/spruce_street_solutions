@@ -17,9 +17,16 @@ export class ContactComponent {
         this.pdx.date = Date.now();
         
         weatherService.getPortlandWeather().subscribe(res => {
-            this.pdx.temperatureF = res.main.temp.toFixed(0) + '\xB0F';
-            this.pdx.temperatureC = ((res.main.temp-32) * 5/9).toFixed(0) + '\xB0C';
-            this.pdx.weather = res.weather[0].main.toLowerCase();
+                this.pdx.temperatureF = res.main.temp.toFixed(0) + '\xB0F';
+                this.pdx.temperatureC = ((res.main.temp-32) * 5/9).toFixed(0) + '\xB0C';
+
+            var weather = res.weather[0].main.toLowerCase();
+            if(weather.includes('cloud') || weather === 'mist')
+                this.pdx.weather = 'cloudy';
+            else if(weather.includes('rain') || weather === 'thunderstorm' || weather === 'snow')
+                this.pdx.weather = 'rain';
+            else
+                this.pdx.weather = 'sunny';
             
             this.pdx.coord = Math.abs(res.coord.lon) + ((res.coord.lon < 0) ? ' S' : ' N');
                 this.pdx.coord += ', ';
@@ -47,8 +54,9 @@ export class ContactComponent {
                 break;
             case 'hours':
                 ticks = new Date(time).getHours();
-                break;
-                       }
+                return this.sanitizer.bypassSecurityTrustStyle('rotate(' + (ticks / 12 * 360) + 'deg)');
+                
+                }
         
                 return this.sanitizer.bypassSecurityTrustStyle('rotate(' + (ticks / 60 * 360) + 'deg)');
     }

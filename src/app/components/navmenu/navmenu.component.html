@@ -14,16 +14,16 @@
         <div class='navbar-collapse collapse' id='bs-navbar-collapse' [ngClass]='{"in": !isCollapsed}'>
             <ul class="nav navbar-nav">
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/work']">Work</a>
+                    <a [routerLink]="['/work']" (click)="toggleCollapse()">Work</a>
                 </li>
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/services']">Services</a>
+                    <a [routerLink]="['/services']" (click)="toggleCollapse()">Services</a>
                 </li>
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/careers']">Careers</a>
+                    <a [routerLink]="['/careers']" (click)="toggleCollapse()">Careers</a>
                 </li>
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/contact']">Contact</a>
+                    <a [routerLink]="['/contact']" (click)="toggleCollapse()">Contact</a>
                 </li>
             </ul>
 

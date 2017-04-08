@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
+.text{
+    font-family: Dosis, Arial, sans-serif;
+    font-size: 1.75rem;
+    letter-spacing: .05em;
+    font-weight: 400;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -khtml-font-smoothing: antialiased;
+    -apple-font-smoothing: antialiased;
+    font-smooth: always;
+    text-rendering: optimizelegibility;
+    text-rendering: geometricPrecision;
+}
+
 @media (max-width: 767px) {
     /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
     /*.body-content {
@@ -75,6 +89,26 @@ section {
 .center-text{
   text-align: center;   
 }
+
+
+.section-black {
+    margin-top: 10px;
+    background: #161c25 url(./assets/images/background-crossplatform.png) no-repeat right top;
+    padding:0;
+    overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-white {
+    margin-top: 10px;
+    background: #fdfdf9 url(./assets/images/background-crossplatform.png) no-repeat right top;
+    padding:0;
+    overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 
 .section-hr {
     background-color: #fdfdf9;
